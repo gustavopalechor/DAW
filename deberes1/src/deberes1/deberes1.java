@@ -19,6 +19,7 @@ public class deberes1 {
 		System.out.println(palabra2.charAt(0)+ 
 				palabra2.substring(palabra2.length()-2, palabra2.length()));
 
+		scan.close();
 	}
 
 }
