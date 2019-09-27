@@ -15,7 +15,7 @@ public class palabras {
 		System.out.println("La primera de cada palabra es: \n" + palabra.charAt(0)
 		+"\t" + palabra2.charAt(0));
 
-
+		scan.close();
 	}
 
 }
