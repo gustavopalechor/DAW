@@ -53,14 +53,14 @@ public class estructuras {
 		else System.out.println("Es un caracter permitido");
 		
 		/* Ejercicio 5 */
-		float peso=0.0f;
-		float altura=0.0f;
+		int peso;
+		int altura;
 		float IMC=0.0f;
 		System.out.println("Introduce tu peso: ");
-		peso = scan.nextFloat();
+		peso = scan.nextInt();
 		System.out.println("Introduce la altura en centimetros: ");
-		altura=scan.nextFloat();
-		IMC=peso/altura;
+		altura=scan.nextInt();
+		IMC=(float) (peso/altura);
 		if (IMC<=18.5) System.out.println("Usted tiene delgadez");
 		if (IMC>=18.5 && IMC<=24.9) System.out.println("Usted es normal");
 		if (IMC>=25.0) System.out.println("Usted esta gordit@");
@@ -68,12 +68,12 @@ public class estructuras {
 		/* Ejercicio 6 */
 		String genero;
 		System.out.println("Introduce tu peso: ");
-		peso = scan.nextFloat();
+		peso = scan.nextInt();
 		System.out.println("Introduce la altura en centimetros: ");
-		altura=scan.nextFloat();
+		altura=scan.nextInt();
 		System.out.println("Introduce tu género: (varon o mujer)");
 		genero = scan.next();
-		IMC=peso/altura;
+		IMC=(float) (peso/altura);
 		if(genero.toLowerCase().equals("varon")) {
 		if (IMC<=18.5) { System.out.println("Usted es flaquito");}
 		else if (IMC>=18.5 && IMC<=27.0) { System.out.println("Usted es normal");}
@@ -87,9 +87,11 @@ public class estructuras {
 		else System.out.println("usted es un extraterrestre");
 		
 		/* Ejercicio 7 */
-		int numero1 = 0;
-		int numero2 = 0;
-		String operacion="";
+		
+		int numero1;
+		int numero2;
+		String operacion;
+		
 		System.out.println("Introduce el primer número: ");
 		numero1= scan.nextInt();
 		System.out.println("Introduce el segundo número: ");
@@ -97,7 +99,18 @@ public class estructuras {
 		System.out.println("desea multiplicar los numeros o sumar: ");
 		operacion= scan.next();
 		
+		if(operacion.toLowerCase().equals("sumar")) {
+			System.out.println(numero1+numero2);
+		}
+		else if (operacion.toLowerCase().equals("multiplicar")) {
+				System.out.println(numero1*numero2);			
+		}
+		else System.out.println("Lo opcion no es correcta");
 		scan.close();
+		
+		/* Ejercicio 8 */
+		
+		
 		
 	}
 
