@@ -20,6 +20,7 @@ public class EstructurasCont {
 		else if (mes == 2) {
 			System.out.println("Tiene 28 días");
 		}
+		System.out.println("Fin");
 		scan.close();
 	}
 		
