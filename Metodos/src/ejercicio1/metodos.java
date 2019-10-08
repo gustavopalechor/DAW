@@ -43,6 +43,7 @@ public class metodos {
 		default: System.out.println("La operacion introducia no corresponde a ninguna");
 			break;
 		}
+		System.out.println("Fin");
 		scan.close();
 	}
 
