@@ -8,7 +8,7 @@ public class Ejercicio3 {
 		
 		Scanner scan= new Scanner(System.in);
 		System.out.println("Escribe una palabra");
-		palabra= scan.next();
+		palabra= scan.nextLine();
 		
 		while (contador<palabra.length()) {
 			System.out.println(palabra.charAt(contador));
