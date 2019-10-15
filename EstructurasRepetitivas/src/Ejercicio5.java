@@ -10,11 +10,11 @@ public static void main(String[] args) {
 		
 		Scanner scan= new Scanner(System.in);
 		System.out.println("Escribe una palabra");
-		palabra1= scan.nextLine();
+		palabra1= scan.nextLine().replace(" ", ""); //reemplaza los espacios y los junta todos
 		contador1= palabra1.length()-1; //con esto sabemos la longitud de la palabra y como despues de una palabra hay siempre un \n se resta 1
 		while (contador1>=0) {
 			
-			palabra3 = palabra3 + palabra1.charAt(contador1);
+			palabra3+=palabra1.charAt(contador1);
 			
 			contador1--;
 						
