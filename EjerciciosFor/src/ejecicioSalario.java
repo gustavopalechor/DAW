@@ -6,24 +6,29 @@ public class ejecicioSalario {
 		float variacionHoras=0.0f;
 		float precioHoras=0.0f;
 		if(horas<=37.5) precioHoras=horas*18;
-		else if(horas>37.5) variacionHoras=horas-37.5
+		else if(horas>37.5) { variacionHoras=(float) (horas-37.5); precioHoras=(float) 
+				((37.5*18)+(variacionHoras*28.8));}
 		
-		return;
+		return calculoImpuestos(precioHoras);
 	}
 	
-	
+	public static float calculoImpuestos(float precioHoras) {
+		float salarioNeto=0.0f;
+		
+		return salarioNeto;
+	}
 	
 	public static void main(String[] args) {
-		String nombre;
+		
 		float horas=0.0f;
 		
 		Scanner scan= new Scanner(System.in);
-		System.out.println("Introduce tu nombre completo:");
-		nombre= scan.nextLine();
+		
 		System.out.println("Introduce las horas totalrealizadas esta semana");
 		horas= scan.nextFloat();
 		
 		salarioNeto(horas);
+		scan.close();
 	}
 
 }
