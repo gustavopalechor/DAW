@@ -14,6 +14,22 @@ public class ejecicioSalario {
 	
 	public static float calculoImpuestos(float precioHoras) {
 		float salarioNeto=0.0f;
+		float impuestos2=0.0f;
+		float impuestos1=0.0f;
+		float precio1=precioHoras-525;
+		float precio2=255.0f;
+		if(precioHoras>525) {	
+			impuestos2= (float) (precio1-(precio1*0.33));
+			impuestos1= (float) (precio2*0.22);
+			salarioNeto=275+impuestos2+impuestos1;
+		
+		}
+		else if(precioHoras>275 || precioHoras<525) {
+			impuestos1=(precioHoras-275); impuestos1=(float) (impuestos1-(impuestos1*0.22));
+			salarioNeto=275+impuestos1;
+			
+		}
+		else if(precioHoras<=275) salarioNeto=precioHoras;
 		
 		return salarioNeto;
 	}
@@ -21,13 +37,16 @@ public class ejecicioSalario {
 	public static void main(String[] args) {
 		
 		float horas=0.0f;
+		float salarioNeto=0.0f;
 		
 		Scanner scan= new Scanner(System.in);
 		
-		System.out.println("Introduce las horas totalrealizadas esta semana");
+		System.out.println("Introduce las horas totales realizadas esta semana");
 		horas= scan.nextFloat();
 		
-		salarioNeto(horas);
+		salarioNeto=salarioNeto(horas);
+		
+		System.out.println("EL salario neto que te corresponde es de: "+salarioNeto);
 		scan.close();
 	}
 
