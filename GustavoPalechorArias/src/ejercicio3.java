@@ -14,10 +14,10 @@ public class ejercicio3 {
 		
 		for(int i=0; i<frase.length(); i++) {
 			letra=frase.toLowerCase().charAt(i);
-			if(letra=='a') {
+			if(letra=='a' || letra=='á') {
 				contador1++;
 			}
-			if(letra=='e') {
+			if(letra=='e' || letra=='é') {
 				contador2++;
 			}
 		}
