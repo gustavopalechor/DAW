@@ -18,11 +18,23 @@ public class Estudiante {
 		this.apellido = apellido;
 		this.ciclo = ciclo;
 	}
+
 	
+	public int getCurso() {
+		return curso;
+	}
+
+	public void setCurso(int curso) {
+		this.curso = curso;
+	}
+
 	public void escribir() {
 		System.out.println(apellido + " - " + curso + " - " + ciclo);
 	}
 	
+	public String escribirr() {
+		return "Estudiante:\nApellido: " + apellido + "\nCiclo: "+ ciclo + "\nCurso: "+ curso;
+	}
 	
 	
 	

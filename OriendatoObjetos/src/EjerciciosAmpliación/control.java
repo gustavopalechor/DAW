@@ -16,8 +16,8 @@ public class control {
 		Libro l2= new Libro("kamasutra", 150, p2.nombre, "20/03/2017");
 		
 		
-		
-		
+		l1.setEditorial("Anaya");
+		l2.setEditorial("Teide");
 		
 		l1.escribir();
 		l2.escribir();
