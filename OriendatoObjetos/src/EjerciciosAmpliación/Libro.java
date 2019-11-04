@@ -6,7 +6,7 @@ public class Libro {
 	int numeroPaginas;
 	String fechaEdicion;
 	Autor autor;
-	editorial editorial;
+	Editorial editorial;
 	public Libro() {
 		
 	}
@@ -30,12 +30,17 @@ public class Libro {
 	public void setFechaEdicion(String fechaEdicion) {
 		this.fechaEdicion = fechaEdicion;
 	}
-	public editorial getEditorial() {
+
+	public Editorial getEditorial() {
 		return editorial;
 	}
-	public void setEditorial(editorial editorial) {
+
+
+	public void setEditorial(Editorial editorial) {
 		this.editorial = editorial;
 	}
+
+
 	public Autor getAutor() {
 		return autor;
 	}
@@ -45,6 +50,6 @@ public class Libro {
 	@Override
 	public String toString() {
 		return "Libro [titulo=" + titulo + ", numeroPaginas=" + numeroPaginas + ", fechaEdicion=" + fechaEdicion
-				+ ", editorial=" + editorial + ", autor=" + autor + "]";
+				+ ", editorial" + editorial + ", autor" + autor + "]";
 	}
 }
