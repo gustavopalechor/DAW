@@ -3,15 +3,21 @@ package ejercicioCuadrado;
 public class triangulo {
 
 	public static void main(String[] args) {
-		int base=4;
-		int altura=1;
+		int base=6;
+		int altura=6;
 		for(int i = 0; i<altura; i++) {
-			System.out.println("*");
-			for (int j = 0; j <base; j++) {
-				System.out.println(" ");
-				System.out.println("\t");
+			
+				for (int j = 0; j <base; j++) {
+					
+				if(i==altura-1 || j==base-1 || j==(base-1)-i || j>(base-1)-i ) {
+					System.out.print("*");
+				}
 				
+				System.out.print("\t");
 			}
+				
+			System.out.print("\n");
+			
 		}
 
 	}
