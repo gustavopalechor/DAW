@@ -9,7 +9,7 @@ public class triangulo {
 			System.out.println("*");
 			for (int j = 0; j <base; j++) {
 				System.out.println(" ");
-				
+				System.out.println("\t");
 				
 			}
 		}
