@@ -7,6 +7,7 @@ public class triangulo {
 		for(int i = 0; i<altura; i++) {
 			System.out.println("*");
 			for (int j = 0; j < args.length; j++) {
+				System.out.println(" ");
 				
 			}
 		}
