@@ -32,7 +32,7 @@ public class especialCalendar {
 		 * System.out.println(fecha.get(Calendar.MONTH));
 		 */
 		
-		
+		scan.close();
 	}
 
 }
