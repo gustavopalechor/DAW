@@ -11,7 +11,7 @@ public class Control {
 		System.out.println("Tipo carrera: "+((Atleta)d1).tipoCarrera+ "\n" + "Nombre: " + d1.nombre +"\n"
 				+ "País de nacimiento: " + d1.Pais + "\n" + "Fecha de nacimiento: " + d1.fechaNacimiento + "\n"
 				+ "Estatura: " + d1.estatura + "\n" + "Sexo: " + d1.sexo + "\n" + 
-				"marca: " + ((Atleta)d1).resultado() );
+				"marca: " + ((Atleta)d1).resultado());
 		
 		
 			
