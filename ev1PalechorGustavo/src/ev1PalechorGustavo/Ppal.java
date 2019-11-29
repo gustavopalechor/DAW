@@ -16,6 +16,7 @@ public class Ppal {
 	public static void main(String[] args) {
 		Calendar C1= Calendar.getInstance();
 		ProdPropio roscon= new ProdPropio();
+		
 		roscon.getTipoProducto();
 		roscon.setTipoProducto(new TipoProducto("Roscon"));
 		roscon.setNombreProducto("Roscon de nata");
