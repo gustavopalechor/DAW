@@ -11,7 +11,9 @@ public class matriz {
 				System.out.print("\t");
 			}
 			System.out.print("\n");
+			
 		}
+		
 
 	}
 
