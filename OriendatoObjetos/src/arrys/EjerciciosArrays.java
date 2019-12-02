@@ -16,6 +16,7 @@ public class EjerciciosArrays {
 			numeros[i]=ran.nextInt(8);
 		}
 		System.out.println(Arrays.toString(numeros));
+		System.out.println(Arrays.toString(numeros));
 		
 		if(numeros[4]>numeros[7]) {
 			System.out.println("La posición 4 es mayor que la 7");
