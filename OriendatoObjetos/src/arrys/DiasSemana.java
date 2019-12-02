@@ -16,8 +16,8 @@ public class DiasSemana {
 		
 		for(int i=0; i<7; i++) {  
 			if(diasSemana[i].equals(dia)) {  
-				dia1=diasSemana[i+1];
-				System.out.println(dia1);
+				
+				System.out.println(diasSemana[i+1]);
 				i=7;
 				
 			}
