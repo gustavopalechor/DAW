@@ -16,8 +16,12 @@ public class DiasSemana {
 		
 		for(int i=0; i<7; i++) {  
 			if(diasSemana[i].equals(dia)) {  
-				
+				if(i==6) {
+					System.out.println(diasSemana[0]);
+				}
+				else if(i<6) {
 				System.out.println(diasSemana[i+1]);
+				}
 				i=7;
 				
 			}
