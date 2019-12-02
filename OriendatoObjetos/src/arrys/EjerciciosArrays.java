@@ -12,6 +12,7 @@ public class EjerciciosArrays {
 		int num2=0;
 		Random ran= new Random();
 		
+		
 		for(int i=0; i<8; i++) {
 			numeros[i]=ran.nextInt(8);
 		}
