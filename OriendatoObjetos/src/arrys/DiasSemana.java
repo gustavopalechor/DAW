@@ -1,5 +1,6 @@
 package arrys;
 
+import java.util.Arrays;
 import java.util.Scanner;
 public class DiasSemana {
 
@@ -25,6 +26,7 @@ public class DiasSemana {
 				i=7;
 				
 			}
+			System.out.println(Arrays.toString(diasSemana));
 			
 		}
 		scan.close();
