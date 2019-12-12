@@ -44,6 +44,7 @@ public class TemperaturasCiudades {
 		System.out.println("Media "+" año " +(i+1)+ " = "+ media2[i]+" grados");
 		
 		}
+		
 		System.out.println();
 		for(int i=0; i<12; i++) {
 			System.out.println("Media mes " +(i+1)+ " en todos los años"+ " = "+ mediaMeses[i]+" grados");
