@@ -21,6 +21,7 @@ public class DiasSemana {
 				else if(i<6) {
 				System.out.println(diasSemana[i+1]);
 				}
+				
 				i=7;
 				
 			}
