@@ -7,8 +7,6 @@ public class DiasSemana {
 	public static void main(String[] args) {
 		String[] diasSemana= {"lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"};
 		String dia;
-		String dia1;
-		
 		Scanner scan= new Scanner(System.in);
 		
 		
