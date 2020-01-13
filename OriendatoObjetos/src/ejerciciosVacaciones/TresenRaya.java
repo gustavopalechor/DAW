@@ -33,7 +33,7 @@ public class TresenRaya {
 		nombre= scan.nextLine();
 		p1.CrearJugador(nombre, id);
 		
-		
+		System.out.println(id);
 		System.out.println(p1.NomJugador+" vas a realizar el juego ¡3 en raya! jugaras contra la maquina");
 		for(int x=0; x<5; x++) {
 		System.out.println("Tú eres la \"x\" ingresa la primera posición");
@@ -52,16 +52,17 @@ public class TresenRaya {
 		if(Jugador[posicionMaquina[0]][posicionMaquina[1]]=='x') {
 			posicionMaquina[0]=(int)(ran.nextDouble()*3+0);
 			posicionMaquina[1]=(int)(ran.nextDouble()*3+0);
-			if(Jugador[posicionMaquina[0]][posicionMaquina[1]]!='x') {
-				acierto=true;
-			}
+			
 		}
 		else {
 			acierto=true;
 		}
+		if(Jugador[posicionMaquina[0]][posicionMaquina[1]]!='x') {
+			Jugador[posicionMaquina[0]][posicionMaquina[1]]='O';
+		}
 		}
 
-		Jugador[posicionMaquina[0]][posicionMaquina[1]]='O';
+		
 		
 		for(int i=0; i<3; i++) {
 			for(int j=0; j<3; j++) {
