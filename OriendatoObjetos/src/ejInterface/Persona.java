@@ -1,6 +1,6 @@
 package ejInterface;
 
-public class Persona {
+public class Persona implements Comparable{
 	int edad;
 	String nombre;
 	String grupo;
@@ -31,4 +31,16 @@ public class Persona {
 	public void setGrupo(String grupo) {
 		this.grupo = grupo;
 	}
+	@Override
+	public int compareTo(Object pers) {
+		Persona p2=(Persona)pers;
+		if(this.edad<p2.getEdad()) {
+			System.out.println(p2.getNombre()+" es mayor que "+ this.nombre);
+		}
+		else System.out.println(this.nombre + " es mayor que "+ p2.nombre);
+			
+		
+		return 0;
+	}
+	
 }
