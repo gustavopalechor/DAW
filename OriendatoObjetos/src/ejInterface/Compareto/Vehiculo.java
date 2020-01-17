@@ -1,6 +1,6 @@
 package ejInterface.Compareto;
 
-public class Vehiculo implements Comparable{
+public class Vehiculo implements Comparable<Vehiculo>{
 
 	
 		String marca;
@@ -26,25 +26,37 @@ public class Vehiculo implements Comparable{
 		public void setCilindrada(int cilindrada) {
 			this.cilindrada = cilindrada;
 		}
+		
+		@Override
+		public int compareTo(Vehiculo ve1) {
+			
+			
+			int valor=0;
+			int valor1=0;
+			
+			if((ve1 instanceof Taxi && this instanceof Taxi)||(ve1 instanceof Autobus && ve1 instanceof Autobus)) {
+							
+					if(this.cilindrada>ve1.getCilindrada()) {
+						valor1=1;
+					}
+					else if(this.cilindrada<ve1.getCilindrada()) {
+						valor1=-1;
+					}
+				}
+			
+			else {
+				valor=-1;
+				
+			}
+			
+				
+			return valor1;
+		}
+		
 		@Override
 		public String toString() {
 			return "Vehiculo [marca=" + marca + ", cilindrada=" + cilindrada + "]";
 		}
-		@Override
-		public int compareTo(Object ve1) {
-			int valor=0;
-			Vehiculo v2=(Vehiculo)ve1;
-			if(this.cilindrada>v2.getCilindrada()) {
-				valor=1;
-			}
-			else if(this.cilindrada<v2.getCilindrada()) {
-				valor=-1;
-			}
-				
-			return valor;
-		}
-		
-		
 		
 
 	
