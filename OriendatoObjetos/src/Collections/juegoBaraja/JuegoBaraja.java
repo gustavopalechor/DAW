@@ -47,7 +47,7 @@ public class JuegoBaraja {
 		MostrarBaraja(barajaJugador1);
 		System.out.println("\n");
 		MostrarBaraja(barajaJugador2);
-
+		System.out.println("Final");
 	}
 
 }
