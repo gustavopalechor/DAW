@@ -28,13 +28,14 @@ public class Vehiculo implements Comparable<Vehiculo>{
 		}
 		
 		@Override
-		public int compareTo(Vehiculo ve1) {
+		public int compareTo(Vehiculo ve1)//Para que reciba un objeto especifico, en comparable le indicamos el tipo de objeto que tenga
+		{
 			
 			
-			int valor=0;
+			
 			int valor1=0;
 			
-			if((ve1 instanceof Taxi && this instanceof Taxi)||(ve1 instanceof Autobus && ve1 instanceof Autobus)) {
+			if((ve1 instanceof Taxi && this instanceof Taxi)||(ve1 instanceof Autobus && this instanceof Autobus)) {
 							
 					if(this.cilindrada>ve1.getCilindrada()) {
 						valor1=1;
@@ -42,10 +43,16 @@ public class Vehiculo implements Comparable<Vehiculo>{
 					else if(this.cilindrada<ve1.getCilindrada()) {
 						valor1=-1;
 					}
+					else { if(this.marca.charAt(0)<ve1.getMarca().charAt(0)) {
+						valor1=-1;
+					}
+					}
 				}
 			
 			else {
-				valor=-1;
+				if(ve1 instanceof Taxi)valor1=1;
+				else valor1=-1;
+				return valor1;
 				
 			}
 			
