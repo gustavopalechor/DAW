@@ -3,10 +3,11 @@ package Collections.juegoBaraja;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 
-
-public class JuegoBaraja {
+public class JuegoBaraja implements Comparable{
+	
 	
 	public static void MostrarBaraja(ArrayList <String> a) {
 		
@@ -19,14 +20,14 @@ public class JuegoBaraja {
 			Collections.shuffle(b);
 			if(a.contains(b.get(0))==false){
 				a.add(b.get(0));
-				
+			
 			}
 		}
 	}
 
 	public static void main(String[] args) {
-		ArrayList<String> baraja= new ArrayList<String>(Arrays.asList("1a", "2a", "3a", "1b",
-				"2b", "3b", "1c", "2c", "3c"));
+		ArrayList<String> baraja= new ArrayList<String>(Arrays.asList((int)1+"1a", (int)2+"a",(int)3+ "a", (int)1+"b",
+				(int)2+"b", (int)3+"b",(int)1+ "c",(int)2+ "c", (int)3+"c"));
 		ArrayList<String> barajaJugador= new ArrayList<String>();
 		ArrayList<String> barajaJugador1= new ArrayList<String>();
 		ArrayList<String> barajaJugador2= new ArrayList<String>();
@@ -47,7 +48,24 @@ public class JuegoBaraja {
 		MostrarBaraja(barajaJugador1);
 		System.out.println("\n");
 		MostrarBaraja(barajaJugador2);
+		
+		System.out.println();
+		Collections.sort(barajaJugador);
+		Collections.sort(barajaJugador1);
+		Collections.sort(barajaJugador2);
+		MostrarBaraja(barajaJugador);
+		System.out.println();
+		MostrarBaraja(barajaJugador1);
+		System.out.println();
+		MostrarBaraja(barajaJugador2);
 		System.out.println("Final");
+	}
+	public int compareTo(List baraja) {
+		int valor=0;
+			if()
+		
+		return valor;
+		
 	}
 
 }
