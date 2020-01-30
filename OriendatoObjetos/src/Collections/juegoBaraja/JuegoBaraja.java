@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 
-public class JuegoBaraja implements Comparable{
+
+
+public class JuegoBaraja {
 	
 	
 	public static void MostrarBaraja(ArrayList <String> a) {
@@ -59,13 +62,18 @@ public class JuegoBaraja implements Comparable{
 		System.out.println();
 		MostrarBaraja(barajaJugador2);
 		System.out.println("Final");
-	}
-	public int compareTo(List baraja) {
-		int valor=0;
-			if()
+		System.out.println("\n");
+		System.out.println(baraja.indexOf(barajaJugador1));
 		
-		return valor;
+		Set<List> set= Set.of(barajaJugador, barajaJugador1, barajaJugador2);
+		
+		System.out.println("\n");
+		System.out.println(set);
+		
 		
 	}
+	
+	
+	
 
 }

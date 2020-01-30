@@ -11,10 +11,10 @@ public class Baraja {
 	
 	public Baraja(){
 	baraja = new ArrayList<Cartas>();
-	String[] palos = {(char)9829+ "-Corazones",(char)9830+ "-Rombos",(char) 9827+"-Tréboles", (char)9824+"-Picas" };
+	String[] palos = {"Corazones","Rombos","Tréboles","Picas" };
 	for(int i=0; i<4; i++) {
 		for(int j=1; j<10; j++) {
-			baraja.add(new Cartas(i, palos[j]));
+			baraja.add(new Cartas(j, palos[i]));
 			
 		}
 		
@@ -24,7 +24,7 @@ public class Baraja {
 	void pintarBaraja() {
 	
 	for(Cartas c: baraja) {
-		System.out.println(c.toString());
+		System.out.println(c);
 	}
 	}
 }
