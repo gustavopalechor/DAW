@@ -9,13 +9,14 @@ public class Ppal {
 
 	public static void main(String[] args) {
 	Baraja b1= new Baraja();
-	ArrayList<Baraja> b2= new ArrayList<Baraja>(Arrays.asList(b1));
+	List b2=b1.getBaraja();
 		
 		for(Object j: b2) {
 			System.out.println(j);
 		}
 		
 		Collections.sort((List) b2);
+		System.out.println("\n");
 		
 		
 		for(Object j: b2) {

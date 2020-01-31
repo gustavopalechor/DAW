@@ -37,11 +37,11 @@ public class Cartas implements Comparable<Cartas> {
 		int valor=0;
 		ArrayList<String> palos = new ArrayList<String>(Arrays.asList("Corazones","Rombos","Tréboles","Picas"));
 			if(palos.indexOf(this.getPalos())>palos.indexOf(c1.getPalos())) {
-				valor=-1;
+				valor=1;
 				
 			}
 			else if(palos.indexOf(this.getPalos())<palos.indexOf(c1.getPalos())) {
-				valor=1;
+				valor=-1;
 			}
 			else {
 				if(this.valor<c1.valor) {

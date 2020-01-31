@@ -21,6 +21,14 @@ public class Baraja {
 	}
 	}
 	
+	public List<Cartas> getBaraja() {
+		return baraja;
+	}
+
+	public void setBaraja(List<Cartas> baraja) {
+		this.baraja = baraja;
+	}
+
 	void pintarBaraja() {
 	
 	for(Cartas c: baraja) {
