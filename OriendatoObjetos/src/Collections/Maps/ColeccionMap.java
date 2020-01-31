@@ -11,9 +11,7 @@ import java.util.Set;
 
 public class ColeccionMap {
 	
-	class Persona() {
-		
-	}
+
 
 	public static void main(String[] args) {
 		Map <Integer, String> coleccion= new HashMap<Integer, String>();
