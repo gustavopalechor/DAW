@@ -25,6 +25,13 @@ public class especialCalendar {
 		fecha.add(Calendar.MONTH, 3);
 		System.out.println("El "+ fecha.get(Calendar.DATE)+ " de "+ fecha.getDisplayName(Calendar.MONTH, Calendar.LONG, local)
 							+ " Ha pasado trimestre" + " del " + fecha.get(Calendar.YEAR));
+		
+		Calendar fecha1= Calendar.getInstance();
+		fecha1.get(Calendar.DATE);
+		fecha1.set(Calendar.DATE, 10);
+		fecha.add(Calendar.DATE, fecha1.get(Calendar.DATE));
+		
+		System.out.println(fecha.get(Calendar.DATE));
 		}
 		/*
 		 * System.out.println(fecha.getTime());
