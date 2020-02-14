@@ -1,6 +1,6 @@
 package readAll;
 
-import java.io.InputStream;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -23,6 +23,7 @@ public class ReadByte {
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
 		}
+		
 
 	}
 
