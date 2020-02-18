@@ -11,15 +11,22 @@ import java.io.IOException;
 
 public class Quijote {
 	
+	static public int contar(int contador) {
+		contador++;
+		return contador;
+	}
+	
+	
+	
 	static public void escribir(byte[] lista, int contador) {
 		for(byte s: lista) {
-			if(s=='\n') {
-				System.out.print(contador);
-				contador=0;
-			}
-			System.out.print((char) s);
-			contador++;
 			
+			System.out.print((char) s);
+			contar(contador);
+			if(s=='\n') {
+				System.out.print(contar(contador));
+				
+			}
 			
 		}
 	}
