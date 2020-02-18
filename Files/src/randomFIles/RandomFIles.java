@@ -24,6 +24,7 @@ public class RandomFIles {
 		try {
 			
 			R1 = new RandomAccessFile("ficheros/grupos.txt", "r");
+			
 			for(int i=0; i<R1.length(); i++) {
 				
 			R1.seek(j);
@@ -43,7 +44,7 @@ public class RandomFIles {
 			}
 		}
 		
-
+		
 	}
 
 }

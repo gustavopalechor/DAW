@@ -15,6 +15,7 @@ public class BufferWrite {
 		String[] s= {"Primer parrafo", "Segundo parrafo", "Tercer parrafo"};
 		Charset charset= StandardCharsets.UTF_8;
 		BufferedWriter b1= null;
+		
 		try {
 			b1= Files.newBufferedWriter(path, charset);
 			for(int i=0; i<s.length; i++) {
