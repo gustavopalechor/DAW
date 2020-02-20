@@ -10,14 +10,7 @@ import java.nio.file.Paths;
 import java.io.IOException;
 
 public class Quijote {
-	
-	static public void escribir(String palabra) {
-		
-		
-		
-			System.out.println(palabra+ palabra.length());
-			
-		}
+
 			
 	public static void main(String[] args) {
 		Path paths= Paths.get("ficheros/Quijote.txt");
