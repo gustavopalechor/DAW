@@ -42,7 +42,13 @@ public class Objetivo3_1 {
 		}
 		
 		
-		
+		finally {
+			try {
+				strm1.close();
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+		}
 
 	}
 

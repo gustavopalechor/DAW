@@ -16,9 +16,11 @@ public class Quijote {
 		Path paths= Paths.get("ficheros/Quijote.txt");
 		InputStream stream= null;
 		
-		  byte[] fichero; Charset charset= StandardCharsets.UTF_8;
+		  byte[] fichero; 
+		  Charset charset= StandardCharsets.UTF_8;
 		  
-		  try { fichero= Files.readAllBytes(paths);
+		  try { 
+			  fichero= Files.readAllBytes(paths);
 		  
 		  for(byte s: fichero) {
 		  
@@ -51,7 +53,7 @@ public class Quijote {
 				
 				palabra+=(char)lista[0];
 				if(lista[0]=='\n') {
-				System.out.print((palabra.length()-1)+palabra);
+				System.out.print((palabra.length()-2)+palabra);
 				palabra="";
 				}
 				
