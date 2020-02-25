@@ -42,34 +42,56 @@ public class FicherosComunidad {
 			//28820,28821,28822,28823
 			centros.remove(0);
 			//System.out.println(centros);
-			String lineas1=null;
+			String lineas1="";
 			for(String j: centros) {
 				atributos=j.split(";");
-				if(atributos[4]=="28820"|| atributos[4]=="28821" || atributos[4]=="28822") {
-					for(int i=0; i<atributos.length; i++) {
-					lineas1+=(atributos[i]+" ");
+				for(int i=0; i<atributos.length; i++) {
+				if(atributos[i].contains("Coslada")|| 
+						atributos[i].contains("San Fernando de Henares") ||
+						atributos[i].contains("Torrejón de Ardoz")) {
+					
+					
+					for(int j1=0; j1<atributos.length; j1++) {
+					lineas1+=(atributos[j1]+" ");
 					}
+				
 					centros1.add(lineas1);
-					System.out.println(centros1);
-					if(atributos[1]== "Coslada") {
-						System.out.println("Coslada"+"\n"+"\t" +lineas1);
-					}
-					else if(atributos[1]=="San Fernando de Henares") {
-						System.out.println("San Fernando de Henares"+"\n"+"\t" +lineas1);
-					}
-					else if(atributos[1]=="Torrejón de Ardoz") {
-						System.out.println("Torrejón de Ardoz"+"\n"+"\t" +lineas1);
-					}
+						/*
+						 * //System.out.println(centros1); if(atributos[1].contains("Coslada")) {
+						 * System.out.println("Coslada"+"\n"+"\t" +lineas1);
+						 * 
+						 * } else if(atributos[1].contains("San Fernando de Henares")) {
+						 * System.out.println("San Fernando de Henares"+"\n"+"\t" +lineas1);
+						 * 
+						 * } else if(atributos[1].contains("Torrejón de Ardoz")) {
+						 * System.out.println("Torrejón de Ardoz"+"\n"+"\t" +lineas1);
+						 * 
+						 * }
+						 */
+					lineas1="";
 				}
 				
 			}
 			
-			
-		} catch (Exception e) {
+			}
+			System.out.println("Coslada"+"\n"+"\t-"+centros1.get(0));
+			System.out.println("San Fernando de Henares"+"\n"+"\t-"+centros1.get(1)+"\n"+"\t-"+centros1.get(2));
+			System.out.println("Torrejon de Ardoz"+"\n"+"\t-"+centros1.get(3));
+		}
+				
+		 catch (Exception e) {
 			System.err.println(e);
 		}
 		
-
+		finally {
+			try {
+				inbuffer.close();
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+		}
+		
+	
 	}
 
 }
