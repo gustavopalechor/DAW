@@ -22,6 +22,8 @@ public class AlumnosC {
 				System.out.println(sqlInsert);
 				return(enlace.insertar(sqlInsert));
 				
+				
+				
 				//idAlumno++;
 			//return true;
 			
