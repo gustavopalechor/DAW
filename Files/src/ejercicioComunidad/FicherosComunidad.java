@@ -56,18 +56,7 @@ public class FicherosComunidad {
 					}
 				
 					centros1.add(lineas1);
-						/*
-						 * //System.out.println(centros1); if(atributos[1].contains("Coslada")) {
-						 * System.out.println("Coslada"+"\n"+"\t" +lineas1);
-						 * 
-						 * } else if(atributos[1].contains("San Fernando de Henares")) {
-						 * System.out.println("San Fernando de Henares"+"\n"+"\t" +lineas1);
-						 * 
-						 * } else if(atributos[1].contains("Torrejón de Ardoz")) {
-						 * System.out.println("Torrejón de Ardoz"+"\n"+"\t" +lineas1);
-						 * 
-						 * }
-						 */
+						
 					lineas1="";
 				}
 				
