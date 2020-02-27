@@ -2,8 +2,10 @@ package ejercicioComunidad;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileOutputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -16,11 +18,12 @@ public class FicherosComunidad {
 
 	public static void main(String[] args) {
 		Path paths= Paths.get("ficheros/CentrosFpInformatica.csv");
+		Path paths1= Paths.get("ficheros/centros1.txt");
 		List<String> centros;
 		List<String> centros1= new ArrayList<String>();
 		Charset charset= StandardCharsets.UTF_8;
 		InputStream inbuffer= null;
-		BufferedWriter outbuffer= null;
+		
 		int n;
 		String[] atributos;
 		
@@ -39,9 +42,9 @@ public class FicherosComunidad {
 				else linea +=(char)n;
 				
 			}
-			//28820,28821,28822,28823
+			
 			centros.remove(0);
-			//System.out.println(centros);
+			
 			String lineas1="";
 			for(String j: centros) {
 				atributos=j.split(";");
@@ -70,6 +73,13 @@ public class FicherosComunidad {
 				
 		 catch (Exception e) {
 			System.err.println(e);
+		}
+		
+		try {
+			Files.write(paths1, centros1, charset);
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
 		
 		finally {
